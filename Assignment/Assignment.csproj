@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{441BEBF0-607F-46B4-8EC7-5D05F2C81B26}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SkillSwapAcademy</RootNamespace>
+    <AssemblyName>SkillSwapAcademy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\college_project-bro.png" />
+    <Content Include="Images\logo-full.svg" />
+    <Content Include="Images\logo-icon.svg" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="Web.config" />
+    <Content Include="App_Data\SkillSwapAcademy_Schema.sql" />
+    <Content Include="AdminCategoriesPage.aspx" />
+    <Content Include="AdminDashboard.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminPendingResourcesPage.aspx" />
+    <Content Include="AdminRegister.aspx" />
+    <Content Include="AdminUsersPage.aspx" />
+    <Content Include="DiscussionCreatePage.aspx" />
+    <Content Include="DiscussionDetailsPage.aspx" />
+    <Content Include="DiscussionsPage.aspx" />
+    <Content Include="LandingPage.aspx" />
+    <Content Include="LogoutPage.aspx" />
+    <Content Include="MemberDashboard.aspx" />
+    <Content Include="MemberLogin.aspx" />
+    <Content Include="MemberRegister.aspx" />
+    <Content Include="MyResourcesPage.aspx" />
+    <Content Include="ProfilePage.aspx" />
+    <Content Include="QuizCreatePage.aspx" />
+    <Content Include="QuizHistoryPage.aspx" />
+    <Content Include="QuizPage.aspx" />
+    <Content Include="QuizResultPage.aspx" />
+    <Content Include="QuizTakePage.aspx" />
+    <Content Include="ResourceCreatePage.aspx" />
+    <Content Include="ResourceDetailsPage.aspx" />
+    <Content Include="ResourceEditPage.aspx" />
+    <Content Include="ResourcesPage.aspx" />
+    <Content Include="SavedResourcesPage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AuthCheck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminCategoriesPage.aspx.cs">
+      <DependentUpon>AdminCategoriesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCategoriesPage.aspx.designer.cs">
+      <DependentUpon>AdminCategoriesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPendingResourcesPage.aspx.cs">
+      <DependentUpon>AdminPendingResourcesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPendingResourcesPage.aspx.designer.cs">
+      <DependentUpon>AdminPendingResourcesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.aspx.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.aspx.designer.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsersPage.aspx.cs">
+      <DependentUpon>AdminUsersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUsersPage.aspx.designer.cs">
+      <DependentUpon>AdminUsersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiscussionCreatePage.aspx.cs">
+      <DependentUpon>DiscussionCreatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscussionCreatePage.aspx.designer.cs">
+      <DependentUpon>DiscussionCreatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiscussionDetailsPage.aspx.cs">
+      <DependentUpon>DiscussionDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscussionDetailsPage.aspx.designer.cs">
+      <DependentUpon>DiscussionDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiscussionsPage.aspx.cs">
+      <DependentUpon>DiscussionsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscussionsPage.aspx.designer.cs">
+      <DependentUpon>DiscussionsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPage.aspx.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LandingPage.aspx.designer.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutPage.aspx.cs">
+      <DependentUpon>LogoutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogoutPage.aspx.designer.cs">
+      <DependentUpon>LogoutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberDashboard.aspx.cs">
+      <DependentUpon>MemberDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberDashboard.aspx.designer.cs">
+      <DependentUpon>MemberDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberLogin.aspx.cs">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberLogin.aspx.designer.cs">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRegister.aspx.cs">
+      <DependentUpon>MemberRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberRegister.aspx.designer.cs">
+      <DependentUpon>MemberRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyResourcesPage.aspx.cs">
+      <DependentUpon>MyResourcesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyResourcesPage.aspx.designer.cs">
+      <DependentUpon>MyResourcesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuizCreatePage.aspx.cs">
+      <DependentUpon>QuizCreatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizCreatePage.aspx.designer.cs">
+      <DependentUpon>QuizCreatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuizHistoryPage.aspx.cs">
+      <DependentUpon>QuizHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizHistoryPage.aspx.designer.cs">
+      <DependentUpon>QuizHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuizPage.aspx.cs">
+      <DependentUpon>QuizPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizPage.aspx.designer.cs">
+      <DependentUpon>QuizPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuizResultPage.aspx.cs">
+      <DependentUpon>QuizResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizResultPage.aspx.designer.cs">
+      <DependentUpon>QuizResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuizTakePage.aspx.cs">
+      <DependentUpon>QuizTakePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizTakePage.aspx.designer.cs">
+      <DependentUpon>QuizTakePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceCreatePage.aspx.cs">
+      <DependentUpon>ResourceCreatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceCreatePage.aspx.designer.cs">
+      <DependentUpon>ResourceCreatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceDetailsPage.aspx.cs">
+      <DependentUpon>ResourceDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceDetailsPage.aspx.designer.cs">
+      <DependentUpon>ResourceDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceEditPage.aspx.cs">
+      <DependentUpon>ResourceEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceEditPage.aspx.designer.cs">
+      <DependentUpon>ResourceEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourcesPage.aspx.cs">
+      <DependentUpon>ResourcesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourcesPage.aspx.designer.cs">
+      <DependentUpon>ResourcesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SavedResourcesPage.aspx.cs">
+      <DependentUpon>SavedResourcesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SavedResourcesPage.aspx.designer.cs">
+      <DependentUpon>SavedResourcesPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59157/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
